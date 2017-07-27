@@ -12,10 +12,7 @@ var sequence    = require('run-sequence');
 var URL = 'http://localhost:63342';
 
 var sassPaths = [
-    'assets/bower_components/normalize.scss/sass',
-    'assets/bower_components/foundation-sites/scss',
-    'assets/bower_components/motion-ui/src',
-    'assets/bower_components/bootstrap-sass/assets/stylesheets'
+
 ];
 
 gulp.task('sass', function () {
