@@ -1,0 +1,99 @@
+
+body, h1, h2, h3, h4, h5 {
+	font-family: "Source Sans Pro";
+}
+
+body {
+	color: rgba(0, 0, 0, 0.86);
+}
+
+a {
+	color: $primary-link;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+	color: #111;
+}
+
+.doc-wrapper {
+	background: #f9f9f9;
+}
+
+.doc-main-navigation {
+	padding: 20px;
+	font-size: 18px;
+	color: white;
+	&.top-bar, &.top-bar ul {
+		background-color: $primary-color;
+
+	}
+	.menu a {
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+
+.doc-sidebar {
+	padding: 40px 0;
+	nav {
+		margin-top: 20px;
+
+	}
+}
+
+.doc-body .content-inner {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.doc-section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.doc-section-title {
+	font-size: 26px;
+	margin-top: 0;
+	font-weight: bold;
+	padding-top: 10px;
+	border-top: 2px solid #d7d7d7;
+	//border-bottom: 1px solid #d7d7d7;
+}
+
+.doc-section-block {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.doc-block-title {
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.doc-code-block {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+// Override Foundation code formatting
+code {
+	padding: inherit;
+	border: inherit;
+}
+
+.drilldown {
+	.is-drilldown-submenu-parent > a::after {
+		border-color: transparent transparent transparent $primary-link;
+	}
+	.js-drilldown-back > a::before {
+		border-color: transparent $primary-link transparent transparent;
+
+	}
+}

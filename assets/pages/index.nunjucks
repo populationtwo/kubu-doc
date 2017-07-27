@@ -1,0 +1,27 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/topbar.nunjucks" %}
+
+<div class="doc-wrapper">
+    <div class="grid-container">
+        <div class="doc-body">
+            <div class="grid-x grid-padding-x">
+
+                <div class="doc-content cell large-9 medium-8">
+                    <div class="content-inner">
+                        {% include "placeholder.nunjucks" %}
+                        {% include "section-1.nunjucks" %}
+                        {% include "section-2.nunjucks" %}
+                    </div><!--//content-inner-->
+                </div><!--//doc-content-->
+
+                <!-- Adds the navigation partial -->
+                {% include "partials/navigation.nunjucks" %}
+            </div>
+        </div><!--//doc-body-->
+    </div><!--//container-->
+</div><!--//doc-wrapper-->
+{% endblock %}

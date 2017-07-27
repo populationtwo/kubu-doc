@@ -1,0 +1,26 @@
+{
+  "name": "cmp-style-guide",
+  "version": "1.0.0",
+  "authors": [
+    "New Signature"
+  ],
+  "description": "Basic template for project documentation",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/newsignature/cmp-style-guide",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "prism": "^1.6.0",
+    "jquery.scrollTo": "^2.1.2"
+  }
+}

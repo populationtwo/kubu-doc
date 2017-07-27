@@ -1,0 +1,27 @@
+{
+  "name": "kubu-documentation-template",
+  "version": "1.0.0",
+  "description": "Documentation template built on nunjucks.js and Foundation 6.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-sass": "^2.3.2",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/newsignature/cmp-style-guide"
+  },
+  "author": "Edwin Lunandy",
+  "license": "MIT",
+  "private": true
+}

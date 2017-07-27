@@ -1,0 +1,22 @@
+<section id="download-section" class="doc-section">
+    <h2 class="doc-section-title">SECTION TITLE</h2>
+    <div class="doc-section-block">
+        CONTENT
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dignissimos doloribus exercitationem
+            fugiat laboriosam maiores officia optio quis. Ad in molestias necessitatibus repellendus rerum. Asperiores
+            fugiat ipsam omnis pariatur perspiciatis!</p>
+
+        <h3 class="doc-block-title">Section Sub Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis.
+        </p>
+        <div class="code-block">
+            <h6>Default code example:</h6>
+            <p><code>bower install &lt;package&gt;</code></p>
+            <p><code>npm install &lt;package&gt;</code></p>
+        </div><!--//code-block-->
+
+    </div>
+</section><!--//doc-section-->
