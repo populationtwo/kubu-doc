@@ -33,7 +33,6 @@
 			<li><a href="#">One</a></li>
 			<li><a href="#">Two</a></li>
 			<li><a href="#">Three</a></li>
-			<li><a href="#">Four</a></li>
 		</ul>
 	</div>
 </div>
@@ -45,7 +44,7 @@
         <div class="doc-body">
             <div class="grid-x grid-padding-x">
 
-                <div class="doc-content cell large-9 medium-8">
+                <div class="doc-content cell large-9" id="docs">
                     <div class="content-inner">
                         <section id="download-section" class="doc-section">
     <h2 class="doc-section-title">SECTION TITLE</h2>
@@ -70,46 +69,46 @@
     </div>
 </section><!--//doc-section-->
 
-                        <section id="color-pallettes-section" class="doc-section">
-	<h2 class="doc-section-title">Section 1</h2>
-	<div class="doc-section-block">
-		<h3 class="doc-block-title">Primary Colors</h3>
+                        <section id="section-one" class="doc-section" data-magellan-target="section-one">
+<h2 class="doc-section-title">Section 1</h2>
+    <div class="doc-section-block">
+        <h3 class="doc-block-title">Primary Colors</h3>
 
-		<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
-			egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-			amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit
-			amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>,
-			ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
-			tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-
-		<ol>
-			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-			<li>Aliquam tincidunt mauris eu risus.</li>
-		</ol>
-
-		<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
-			aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
-			mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-		</blockquote>
-
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-			<li>Aliquam tincidunt mauris eu risus.</li>
-		</ul>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis
+            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+            amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit
+            amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>,
+            ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
+            tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
 
-		<pre><code class="language-css">
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+
+        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
+            aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+            mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+        </blockquote>
+
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+        </ul>
+
+
+        <pre><code class="language-css">
 		#header h1 a {
 		  display: block;
 		  width: 300px;
 		  height: 80px;
 		}
 		</code></pre>
-	</div>
+    </div>
 </section><!--//doc-section-->
 
-                        <section id="typography-section" class="doc-section">
+                        <section id="section-two" class="doc-section" data-magellan-target="section-two">
 	<h2 class="doc-section-title">Section 2</h2>
 	<div class="doc-section-block">
 		<h3 class="doc-block-title">Sub section</h3>
@@ -143,24 +142,15 @@
                 <!-- navigation.nunjucks -->
 
 
-<div class="doc-sidebar hidden-xs cell large-3 medium-4">
-	<nav id="doc-nav">
-		<ul id="doc-menu" class="vertical menu drilldown" data-drilldown data-spy="affix">
-			<li><a href="#">One</a></li>
-			<li>
-				<a href="#">Two</a>
-				<ul class="menu vertical nested">
-					<li><a href="#">Two A</a></li>
-					<li><a href="#">Two B</a></li>
-					<li><a href="#">Two C</a></li>
-					<li><a href="#">Two D</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Three</a></li>
-			<li><a href="#">Four</a></li>
+<div class="doc-sidebar hidden-xs cell large-3 data-sticky-container show-for-large">
+	<nav id="doc-nav" class="sticky" data-sticky data-anchor="docs" data-sticky-on="large">
+		<ul id="doc-menu" class="vertical menu drilldown" data-magellan>
+            <li><a href="#section-one">Section One</a></li>
+            <li><a href="#section-two">Section Two</a></li>
 		</ul>
 	</nav>
 </div><!--//doc-sidebar-->
+
             </div>
         </div><!--//doc-body-->
     </div><!--//container-->

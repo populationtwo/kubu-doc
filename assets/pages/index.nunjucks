@@ -10,7 +10,7 @@
         <div class="doc-body">
             <div class="grid-x grid-padding-x">
 
-                <div class="doc-content cell large-9 medium-8">
+                <div class="doc-content cell large-9" id="docs">
                     <div class="content-inner">
                         {% include "placeholder.nunjucks" %}
                         {% include "section-1.nunjucks" %}

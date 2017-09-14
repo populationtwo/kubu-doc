@@ -1,4 +1,4 @@
-<section id="typography-section" class="doc-section">
+<section id="section-two" class="doc-section" data-magellan-target="section-two">
 	<h2 class="doc-section-title">Section 2</h2>
 	<div class="doc-section-block">
 		<h3 class="doc-block-title">Sub section</h3>
